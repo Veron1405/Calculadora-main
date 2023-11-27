@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <!-- Container principal da calculadora -->
+    <div class="container">
+        <input type="text" id="visor" disabled>
+        <div class="teclado">
+            <!-- botões para os números -->
+            <button class="numero" onclick="calculadora.adicionarNumero('7')">7</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('8')">8</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('9')">9</button>
+            <!-- botões para a operação de divisão -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('/')">/</button>
+
+             <!-- botões para os números -->
+            <button class="numero" onclick="calculadora.adicionarNumero('4')">4</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('5')">5</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('6')">6</button>
+
+            <!-- botões para a operação de multiplicação -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('*')">*</button>
+
+             <!-- botões para os números -->
+            <button class="numero" onclick="calculadora.adicionarNumero('1')">1</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('2')">2</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('3')">3</button>
+
+            <!-- botões para a operação de subtração -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('-')">-</button>
+            <!-- botões para os números -->
+            <button class="numero" onclick="calculadora.adicionarNumero('0')">0</button>
+            <!-- botões para a operação de limpar -->
+            <button class="operacao" onclick="calculadora.limpar('C')">C</button>
+            <!-- botões para a operação de somar -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('+')">+</button>
+            <!-- botões para a operação de resultado -->
+            <button class="operacao" onclick="calculadora.resultado('=')">=</button>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+ </body>
+</html>
